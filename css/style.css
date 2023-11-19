@@ -494,18 +494,22 @@ section {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
+
 }
 
-.about .about-content title {
+
+.about .about-content .title {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
-    color: var(--text-black-900);
+    /* margin-bottom: px; */
+    color: var(--text-black-700);
 }
 
 .about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-top: 30px;
 }
 
 .about .about-content .timeline {
@@ -565,7 +569,7 @@ section {
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline .timeline-title {
+.about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
@@ -659,15 +663,19 @@ section {
 }
 
 .Portfilio .portfolio-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: 30px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* margin-bottom: 30px; */
 }
 
 .Portfilio .portfolio-item-inner {
-    border: 6px solid var(--bg-black-100);
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border: none;
+    background: transparent;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
     cursor: pointer;
 }
 
@@ -861,6 +869,10 @@ section {
 
 .style-switcher .day-night {
     top: 55px;
+}
+
+.day-night-lightcolor {
+    color: var(--skin-color);
 }
 
 
