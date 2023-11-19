@@ -120,3 +120,59 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial resize handling
     handleResize();
 });
+
+
+
+/**/
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to handle click on nav links
+    function handleNavLinkClick(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth",
+            });
+        }
+    }
+
+    // Add click event listeners to all nav links
+    const navLinks = document.querySelectorAll('.nav a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', handleNavLinkClick);
+    });
+});
+
+/**/
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to handle click on nav links
+    function handleNavLinkClick(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth",
+            });
+        }
+    }
+
+    // Add click event listener to "Contact Me" button in the Home section
+    const contactMeButton = document.querySelector('.home a.btn.hire-me');
+    if (contactMeButton) {
+        contactMeButton.addEventListener('click', handleNavLinkClick);
+    }
+
+    // Add click event listeners to all nav links
+    const navLinks = document.querySelectorAll('.nav a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', handleNavLinkClick);
+    });
+});
