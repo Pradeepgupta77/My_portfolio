@@ -916,6 +916,6 @@ section {
 
 .nav-toggle .navopen {
     border: 1px solid var(--bg-black-50);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background: var(--bg-black-100);
 }

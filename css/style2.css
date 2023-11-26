@@ -48,8 +48,8 @@
 }
 
 .card:hover .img8x {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .card .content {
@@ -73,7 +73,7 @@
 }
 
 .card:hover .content .details {
-    transform: translateY(-40px);
+    transform: translateY(20px);
     transition: 0.6s;
 
 }
@@ -162,3 +162,6 @@
 
 
 }
+
+
+

@@ -178,3 +178,43 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', handleNavLinkClick);
     });
 });
+
+
+/* Nv changing */
+const nav = document.querySelector(".nav"),
+    navList = nav.querySelectorAll("li"),
+    totalNavList = navList.length;
+for (let i = 0; i < totalNavList; i++) {
+    const a = navList[i].querySelector("a");
+    a.addEventListener("click", function () {
+        for (let j = 0; j < totalNavList; j++) {
+            navList[j].querySelector("a").classList.remove("active");
+        }
+        this.classList.add("active")
+    })
+}
+
+// downlod cv
+document.getElementById('downloadBtn').addEventListener('click', function () {
+    // Replace 'pradeep.pdf' with the actual path to your PDF file
+    var fileUrl = '../Pradeep Kumar Gupta .pdf';
+
+    // Creating a hidden link element
+    var downloadLink = document.createElement('a');
+
+    // Setting the href attribute of the link to the file URL
+    downloadLink.href = fileUrl;
+
+    // Setting the download attribute to prompt the user to download the file with the specified name
+    downloadLink.download = 'pradeep.pdf';
+
+    // Appending the link to the document body
+    document.body.appendChild(downloadLink);
+
+    // Triggering a click on the link to start the download
+    downloadLink.click();
+
+    // Removing the link from the document body after the download has started
+    document.body.removeChild(downloadLink);
+});
+
