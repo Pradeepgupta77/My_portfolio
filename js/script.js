@@ -197,7 +197,7 @@ for (let i = 0; i < totalNavList; i++) {
 // downlod cv
 document.getElementById('downloadBtn').addEventListener('click', function () {
     // Replace 'pradeep.pdf' with the actual path to your PDF file
-    var fileUrl = '../Pradeep Kumar Gupta .pdf';
+    var fileUrl = '../Pradeep gupta.pdf';
 
     // Creating a hidden link element
     var downloadLink = document.createElement('a');
